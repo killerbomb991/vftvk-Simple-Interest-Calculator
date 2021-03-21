@@ -4,13 +4,89 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+		<div class="app">
+			<table> 
+				<tr>
+					<th colspan="4">
+						<h1>Simple Interest Calculator</h1>
+					</th>
+					
+				</tr>
+				<tr>
+					<td>
+					</br>
+					</td>
+					<td >
+						Amount 
+					</td>
+					<td>
+						<input type="number"  id="principal"> 
+					</td>
+			
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+						Interest Rate
+					</td>
+					<td>
+						<input type="range" id="rate" name="rate" min="1" max="10" step="0.1" value="3" oninput="updateTextInput(this.value)"> <label for="range" id="rateVal">3%</label>
+					</td>					
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+						No. of Years
+					</td>
+					<td>
+						<select id="years"> 
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</td>
+					<td>
+					</td>
+					
+				</tr>
+				<tr>					
+					<td>
+					</td>
+					<td>
+						<button onclick="compute()">Compute Interest</button>
+					</td>
+					<td>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td colspan="3">
+						<span id="result"></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<h4>&copy; Everyone Can Get Rich</h4>
+					</td>
+				</tr>
+		</table>
+		
+		</div>    
+	</body>
 </html>

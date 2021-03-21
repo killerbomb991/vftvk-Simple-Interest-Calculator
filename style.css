@@ -1,4 +1,21 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {background-color:black;}
+h1{color:grey;
+   position:center;
+  }
+.app{
+	position: absolute;
+	display: flex;
+	background-color:white;
+	border: 5px outset black;
+	border-radius: 20px 20px 20px 20px;
+	width: 450px;
+	left:32%;  
+	}
+table{
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	}	
+td{
+	width:90px;
+}	
